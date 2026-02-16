@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+    *{
+        margin: 0px;
+    }
+    body{
+        background-image: url(images/prbhasnetp1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    #blur{
+        height: 100vh;
+        background: rgba(0,0,0,0.7);
+    }
+    #logo{
+       height: 150px;
+       width: 300px;
+    }
+    header{
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    select{
+        border: none;
+        background: rgba(0,0,0,0.9);
+        border: 1px solid white;
+        color: white;
+        border-radius: 4px;
+        padding: 5px;
+        width: 130px;
+        height: 35px;
+        font-size: 16px;
+    }
+   #mylink{
+    text-decoration: none;
+    /* width: 130px; */
+    /* height: 35px; */
+    padding: 5px 18px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-weight:500;
+    background:white;
+    color:black;
+    
+   }
+   main{
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   }
+   main h1{
+    width: 600px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    /* font-family: 'Times New Roman', Times, serif; */
+   }
+   #p1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+    /* font-weight: bold; */
+   }
+   #p2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 40px;
+    text-transform: uppercase;
+    /* font-family: 'Times New Roman', Times, serif; */
+   }
+   #box{
+    width: 350px;
+    height: 50px;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 2px white;
+    background: rgba(255,255,255,);
+    border-radius: 7px;
+    /* font-weight: bold; */
+   }
+   #box::placeholder{
+    padding-left: 10px;
+    color: black;
+    font-size: 16px;
+   }
+   #get{
+    width: 200px;
+    height: 52px;
+    background-color: black;
+    color:white;
+    box-shadow: 0px 0px 2px white;
+    border: none;
+    font-size: 16px;
+    margin-left: 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    
+    
+   }
+   .prabhas{
+    width:100%;
+    height:90px;
+    position:relative;
+    background:black;
+    overflow:hidden;
+    margin-top: 150px;
+   }
+   .prabhas::before{
+    content:"";
+    position:absolute;
+    left:-25%;
+    right:-25%;
+    top:-60px;
+    height:70px;
+    background:linear-gradient(90deg,white,white,white);
+    border-radius: 50%;
+   }
+   *{
+    text-transform: uppercase;
+   
+   }
+   .castcon{
+    background: black;
+    /* border:none */
+    height: 600px;
+    color: white;
+    padding: 60px 80px 0px 30px;
+    
+   }
+   .cast{
+    width: 230px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 4px;
+    position: relative;
+   }
+   .cast h1{
+    position: absolute;
+    left: -25px;
+    top: 300px;
+    font-size: 20px;
+    color: white;
+    /* -webkit-text-stroke: 2px black;   */
+    border: 12px black; 
+
+}
+.cast h2{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    /* text-align: center; */
+    /* top: 230px; */
+    left: 60px;
+    bottom: -117px;
+}
+.cast h1:hover{
+    transform: scale(1.05,1.05);
+    transition: all ease 0.1s;
+}
+.castdiv1{
+    display: flex;
+    /* flex-direction: rows; */
+
+}
+.cast img{
+    width: inherit;
+    border-radius: 6px;
+    box-shadow: 0px 0px 2px white;
+}
+.cast img:hover{
+    transform: scale(1.05,1.05);
+    transition: all ease 0.2s;                                        
+}
+#srv h2{
+   
+    left: 25px;
+}
+
+   </style>
+</head>
+<body>
+   <div id="blur">
+     <header>
+        <div>
+            <img src="images/spirit.png" id="logo">
+        </div>
+        <div>
+            <select>
+                <option>English</option>
+                 <option>Hindi</option>
+                  <option>Telugu</option> 
+                  <option>Tamil</option>
+                   <option>Kannada</option>
+                <option>Malayalam</option>
+            <option>Japanese</option>
+        <option>Korean</option>
+    <option>Mandarin</option></select>
+                   <a href="" id="mylink">Sign In</a>
+        </div>
+    </header>
+    <main>
+        <h1># One Bad Habit</h1>
+        <p id="p1">
+           The Film By
+        </p>
+        <section>
+            <p id="p2">Sandeep Reddy Vanga</p>
+            <div>
+                <input type="email" placeholder="Bhadrakali Pictures" id="box">
+                <button id="get">
+                  T-Series Films &nbsp;&nbsp;✯
+                </button>
+            </div>
+        </section>
+    </main>
+   
+    <div class="prabhas"></div>
+    <!-- cards -->
+     <div class="castcon">
+        <h2 style="margin-bottom: 30px;">cast & crew</h2>
+        <div class="castdiv1">
+
+            <div class="cast">
+                <img src="images/prabhas spirit.jpg">
+                <h1>hero</h1>
+                <h2>prabhas</h2>
+            </div>
+             <div class="cast">
+                <img src="images/triptii.jpg">
+                <h1>heroine</h1>
+                <h2>triptii dimri</h2>
+            </div>
+             <div id="srv"><div class="cast">
+                <img src="images/srv1.jpg">
+                <h1>director</h1>
+                <h2>sandeep reddy vanga</h2>
+            </div></div>
+            <div class="cast">
+                <img src="images/don lee.jpg">
+                <h1>antagonist</h1>
+                <h2>don lee</h2>
+            </div>
+             <div class="cast">
+                <img src="images/0bera.jpg">
+                <h1>villan</h1>
+                <h2>vivek oberoi</h2>
+            </div>
+             
+        </div>
+     </div>
+   </div>
+</body>
+</html>
